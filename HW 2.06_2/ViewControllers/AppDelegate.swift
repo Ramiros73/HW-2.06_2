@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  HW 2.06_2
-//
-//  Created by Рамиль Хамидуллин on 07.07.2023.
-//
-
 import UIKit
 
 @main

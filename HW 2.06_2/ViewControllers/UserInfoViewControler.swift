@@ -1,16 +1,11 @@
-//
-//  ViewController.swift
-//  HW 2.06_2
-//
-//  Created by Рамиль Хамидуллин on 07.07.2023.
-//
-
 import UIKit
 
 class UserInfoViewControler: UIViewController {
-
+    
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var surnameLabel: UILabel!
+    @IBOutlet var CompanyTitle: UILabel!
+    @IBOutlet var DepartmentTitle: UILabel!
     @IBOutlet var jobLabel: UILabel!
     
     var user: User!
@@ -18,12 +13,14 @@ class UserInfoViewControler: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nameLabel.text = user.person.name
-        nameLabel.text = user.person.surname
-        nameLabel.text = user.person.job
+        surnameLabel.text = user.person.surname
+        CompanyTitle.text = user.person.company
+        DepartmentTitle.text = user.person.department
+        jobLabel.text = user.person.job
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
     }
 }
-    
+
